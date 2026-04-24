@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "garagedoorscience": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://garagedoorscience.com/mcp"
+      ]
+    }
+  }
+}

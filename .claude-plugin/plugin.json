@@ -1,0 +1,12 @@
+{
+  "name": "garagedoorscience",
+  "version": "0.1.0",
+  "description": "Skills + MCP connector for calling garagedoorscience.com. Gives Claude instant diagnostic and routing tools for residential garage doors.",
+  "author": {
+    "name": "Seth Shoultes",
+    "url": "https://sethshoultes.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/sethshoultes/garagedoorscience-claude-plugin",
+  "keywords": ["mcp", "garage door", "diagnostic", "home services", "claude"]
+}
