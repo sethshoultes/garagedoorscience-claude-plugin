@@ -1,0 +1,14 @@
+{
+  "name": "garagedoorscience",
+  "owner": {
+    "name": "Seth Shoultes",
+    "url": "https://sethshoultes.com"
+  },
+  "plugins": [
+    {
+      "name": "garagedoorscience",
+      "source": "./",
+      "description": "Diagnose a garage door problem, know what is safe to do yourself and what is a job for a pro, and hand off to a local pro. Uses the Garage Door Science connector."
+    }
+  ]
+}

@@ -1,85 +1,35 @@
-# Garage Door Science — Claude Code plugin
+# Garage Door Science for Claude
 
-A Claude Code plugin that ships a `diagnose-garage-door` skill plus an MCP connector config for `garagedoorscience.com`. Once installed, Claude gains eight tools for garage-door diagnostics, reference photos, cost estimation, and partner routing.
-
-## What's inside
-
-- **`.claude-plugin/plugin.json`** — plugin manifest
-- **`skills/diagnose-garage-door/SKILL.md`** — instructions for Claude on when and how to use the garagedoorscience.com tools, safety rules, and answer shape
-- **`.mcp.json`** — MCP server registration pointing at `https://garagedoorscience.com/mcp` (public tier; no auth)
+Skills and a connector that help a homeowner work out what is wrong with a garage door, know what is safe to do themselves and what is a job for a pro, and hand off to a local pro. The answers cite the matching article at [garagedoorscience.com](https://garagedoorscience.com).
 
 ## Install
 
-### Option 1 — User-level (every project gets the plugin)
+In Claude Code:
 
-```bash
-cd ~/.claude/plugins
-git clone https://github.com/sethshoultes/garagedoorscience-claude-plugin.git
+```
+/plugin install garagedoorscience --marketplace sethshoultes/garagedoorscience-claude-plugin
 ```
 
-Restart Claude Code (or reload via `/plugin reload` if your version supports it).
+This adds the skills and the Garage Door Science connector (`https://garagedoorscience.com/mcp`, public, no sign-in). In Claude on the web or Desktop, add the connector at that URL under Settings, Connectors.
 
-### Option 2 — Project-level
+## What is inside
 
-```bash
-cd your-project
-mkdir -p .claude/plugins
-git clone https://github.com/sethshoultes/garagedoorscience-claude-plugin.git .claude/plugins/garagedoorscience
-```
+| Skill | When Claude uses it |
+|---|---|
+| `diagnose` | The door will not open or close, the opener or lights are dead, the remote only works up close, or it acts up in a power outage |
+| `noisy-door` | A grind, rattle, squeak or pop |
+| `seasonal-maintenance-checklist` | A safe walk-around and the three-to-six-month pass |
+| `stay-safe` | Always on: springs and cables are always a job for a pro, never a step |
+| `find-a-pro` | The problem is not a do-it-yourself job, or the homeowner wants someone to come out |
 
-The plugin is registered for that project only.
+## Safety
 
-### Option 3 — Claude Desktop (Custom Connector UI, no plugin)
+Claude never gives steps for springs, cables, bottom brackets or an off-track door. It never tells anyone to open an outlet, a panel or the opener, or to turn off, cover or bypass the safety sensors. If a skill is unsure, it says so and points to a pro.
 
-If you're using Claude Desktop instead of Claude Code:
+## Connector
 
-1. Open Claude Desktop → Settings → **Connectors**
-2. Click **Add Custom Connector**
-3. URL: `https://garagedoorscience.com/mcp`
-4. Auth: **None** (public tier)
-
-The SKILL.md in this repo becomes reference documentation you can paste into your own system prompt.
-
-## Use
-
-Once installed, ask Claude questions like:
-
-- *"My garage door won't close all the way — what should I check?"*
-- *"What does a broken torsion spring look like?"*
-- *"Find me a garage-door pro near 84770."*
-
-Claude will invoke the `diagnose-garage-door` skill when the conversation hits those triggers, and call MCP tools as needed.
-
-## Upgrade to pro tier
-
-The public tier is 60 requests/min, 2000/day per IP. For higher limits and top-10 retrieval (vs top-3 public), grab a free `gds_live_` key at [garagedoorscience.com/developers](https://garagedoorscience.com/developers), then edit `.mcp.json`:
-
-```json
-{
-  "mcpServers": {
-    "garagedoorscience": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://garagedoorscience.com/mcp-pro",
-        "--header",
-        "Authorization: Bearer gds_live_YOUR_KEY_HERE"
-      ]
-    }
-  }
-}
-```
-
-## Related
-
-- **Platform this calls:** [garagedoorscience.com](https://garagedoorscience.com)
-- **Agent docs:** [/brain](https://garagedoorscience.com/brain)
-- **Use cases & recipes:** [/developers/use-cases](https://garagedoorscience.com/developers/use-cases)
-- **Cookbook repo:** [garagedoorscience-cookbook](https://github.com/sethshoultes/garagedoorscience-cookbook)
-- **WordPress plugin:** [wp-garagedoorscience](https://github.com/sethshoultes/wp-garagedoorscience)
-- **Essay on the pattern:** [One Registry, Seven Surfaces](https://sethshoultes.com/blog/one-registry-seven-surfaces.html)
+The connector is read-only for homeowners: it looks up diagnoses, reference photos, door styles and typical cost ranges from Garage Door Science. Two tools take a photo or an inspection a homeowner chooses to send. Privacy: https://garagedoorscience.com/privacy
 
 ## License
 
-MIT.
+MIT
