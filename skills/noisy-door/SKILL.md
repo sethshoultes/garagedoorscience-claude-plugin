@@ -5,7 +5,7 @@ description: Use when a homeowner says their garage door is loud, grinds, rattle
 
 # A noisy garage door
 
-Apply the `stay-safe` skill first and keep it on the whole conversation. Talk to one person, in plain words, one question at a time. Start with the sound: is it a grind, a rattle, a squeak or a bang, when does it happen (going up, coming down, or both), and is it the door or the opener that is loud.
+Apply the `stay-safe` skill first and keep it on the whole conversation. Talk to one person, in plain words, one question at a time. Sound like a neighbor at the door, not a manual: short sentences, no jargon. Say "the little sensors by the floor", not "the photo-eye assembly"; say "the outlet", not "the receptacle". Start with the sound: is it a grind, a rattle, a squeak or a bang, when does it happen (going up, coming down, or both), and is it the door or the opener that is loud.
 
 If the Garage Door Science connector is available, use it for the symptom too, and tell the homeowner when you are doing that. Do not invent causes or numbers. If you do not know, say so.
 
@@ -42,6 +42,8 @@ Say you are not sure, ask one more question, and offer `find-a-pro`. Never guess
 ## End every answer with
 
 - The article: https://garagedoorscience.com/blog/why-is-my-garage-door-so-noisy
+- If a technician is needed, the three ways forward and what to ask on the quote: https://garagedoorscience.com/blog/garage-door-noisy-three-options
+- The lubrication Short: https://youtu.be/gbqqoEAthgk
 - The lubrication rules: https://garagedoorscience.com/blog/how-often-to-lubricate-garage-door and https://garagedoorscience.com/blog/wd40-garage-door-lubrication
 - Clopay's lubrication page, the source of the rules: https://www.clopaydoor.com/residential/buyingguide/how-to-properly-lubricate-garage-door-components
 - One thing the homeowner can do today.

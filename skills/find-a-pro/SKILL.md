@@ -17,4 +17,4 @@ Say once, briefly, that the hand-off is a convenience and the homeowner is free 
 
 Do not quote a price for the repair. If they ask what it costs, say it varies, and that the technician should quote after looking at the door.
 
-Cite: the Garage Door Science article for the problem the homeowner described (see the `diagnose` skill for which one). Short: pending.
+Cite: the Garage Door Science article for the problem the homeowner described (see the `diagnose` skill for which one).
