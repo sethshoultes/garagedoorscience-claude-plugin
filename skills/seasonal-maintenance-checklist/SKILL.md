@@ -22,11 +22,11 @@ Lubricate the hinges, steel rollers and bearings the same way (Clopay says every
 
 ## If the door freezes shut
 
-Raynor says to clear snow and ice with a flat shovel or spade, avoiding the door finish. If it is still stuck, soften the ice with a hair dryer, keeping heat away from the door and the weather strip. Do not cycle the opener to break the ice, because it is not built to lift against a solid freeze. If it will not come free, call a technician rather than forcing it.
+Raynor says to clear snow and ice with a flat shovel or spade, avoiding the door finish. If it is still stuck, soften the ice with a hair dryer, keeping heat away from the door and the weather strip. Do not cycle the opener to break the ice, because it is not built to lift against a solid freeze. If it will not come free, call a technician rather than forcing it. Short: https://youtu.be/P9_V-vWwjfM
 
 ## A wet or frosted door, nothing broken
 
-That is usually condensation. Article: https://garagedoorscience.com/blog/garage-door-condensation-in-winter
+That is usually condensation. Article: https://garagedoorscience.com/blog/garage-door-condensation-in-winter. Short: https://youtu.be/3F-O0ukjRm0
 
 ## Leave to a technician
 

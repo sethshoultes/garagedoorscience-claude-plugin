@@ -1,6 +1,6 @@
 {
   "name": "garagedoorscience",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Diagnose a garage door problem, learn what is safe to do yourself and what is a job for a pro, and get a hand-off to a local pro. Backed by the Garage Door Science connector.",
   "author": {
     "name": "Seth Shoultes",
